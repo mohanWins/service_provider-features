@@ -1,0 +1,201 @@
+.table-background:nth-child(1),
+.table-background:nth-child(3),
+.table-background:nth-child(5),
+.table-background:nth-child(9),
+.table-background:nth-child(12) {
+  background-color: rgb(234 234 234 / 46%);
+}
+
+.table-background td:nth-child(1),
+.table-background td:nth-child(3),
+.table-background td:nth-child(5) {
+  font-weight: bold;
+  color: #575656 !important;
+}
+.table-background {
+  background-color: rgb(234 234 234 / 46%);
+}
+
+.AdminstrationTable-background th:nth-child(1),
+.AdminstrationTable-background th:nth-child(6),
+.AdminstrationTable-background th:nth-child(9),
+.AdminstrationTable-background th:nth-child(13) {
+  font-weight: bold;
+  box-shadow: inset -2px 3px 5px rgb(238 238 238);
+  background-color: rgb(238 238 238);
+}
+
+table {
+  border-collapse: collapse;
+}
+tr {
+  border: none;
+}
+td {
+  border-right: 1px solid #e1e1e1;
+  border-left: 1px solid #e1e1e1;
+}
+.test {
+  text-align: -webkit-center !important;
+  border-right: 1px solid #e1e1e1;
+  font-size: 13px !important;
+  width: 77px !important;
+
+  width: 60;
+  height: 20;
+  box-shadow: 5px 2px 5px rgb(224 224 224 / 82%);
+  color: #575656 !important ;
+}
+
+.borderTable {
+  border-right: 1px solid #e1e1e1;
+  table-layout: "fixed";
+  box-shadow: 5px 2px 5px rgb(224 224 224 / 82%);
+}
+
+.root {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table {
+  min-width: 650px;
+}
+
+.tableContainer {
+  max-width: 800px;
+  max-height: 750px;
+}
+
+.table {
+  min-width: 650px;
+  table-layout: fixed;
+}
+
+.sticky {
+  position: sticky;
+  left: 0;
+  background: white;
+  box-shadow: 5px 2px 5px rgb(224 224 224 / 82%);
+  color: #575656 !important;
+  cursor: pointer;
+}
+
+.stickyHeader {
+  position: sticky;
+  left: 0;
+  background: white;
+  box-shadow: inset -3px -3px 5px rgb(238 238 238);
+  width: 172px;
+  z-index: 999 !important;
+  color: #575656 !important;
+  font-weight: 900 !important;
+}
+.table tbody th:nth-child(5) {
+  font-weight: bold !important;
+}
+.table-background:hover {
+  background-color: rgb(237, 237, 237);
+}
+
+#root {
+  padding: 70px;
+}
+.css-1pbcnmo-MuiStack-root {
+  position: sticky;
+  left: 0;
+  bottom: 0;
+}
+/* .css-rorn0c-MuiTableContainer-root {
+  margin-top: 50px;
+} */
+.css-3ic5e2-MuiTableCell-root {
+  color: #575656 !important;
+}
+.css-duongd-MuiTableRow-root {
+  box-shadow: 5px 2px 5px rgb(224 224 224 / 82%);
+}
+.css-1881dhj-MuiTableCell-root {
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  width: 55px !important;
+  color: #575656 !important;
+}
+::-webkit-scrollbar {
+  width: 10px;
+
+  border-radius: 10px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(0, 2%, 74%);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #898888;
+  border-radius: 10px;
+}
+.css-19r4tey-MuiStack-root {
+  position: sticky;
+  bottom: 0;
+  background-color: white !important;
+}
+.css-1pbcnmo-MuiStack-root {
+  position: sticky;
+  bottom: 0;
+  background-color: white;
+}
+
+.css-1ex1afd-MuiTableCell-root {
+  padding: 11px !important;
+  box-shadow: inset -2px 3px 5px rgb(239 238 238 / 66%);
+  font-size: 4px;
+  border-bottom: 0 !important;
+}
+.css-1yhpg23-MuiTableCell-root {
+  padding: 0 !important;
+
+  font-size: 4px;
+  width: 8px;
+  box-shadow: inset -2px 3px 5px rgb(239 238 238 / 66%);
+}
+.css-10srsx3-MuiTableCell-root {
+  padding: 11px !important;
+}
+.css-9zf0lf-MuiButtonBase-root-MuiButton-root {
+  position: absolute;
+  top: 14px !important;
+  left: 753px !important;
+  color: white !important;
+}
+.css-17m0rzj {
+  border-radius: 10px;
+  border: none !important ;
+  width: 800px !important;
+}
+.MuiButton-outlined {
+  border-color: grey !important;
+  color: #575656 !important;
+}
+.Button-footer {
+  box-shadow: 2px -5px 5px rgb(224 224 224 / 82%);
+}
+.Errmsg {
+  color: red !important;
+}
+.status {
+  display: "flex";
+  justify-content: start;
+}
+.serviceModal {
+  border: none !important;
+}
+.css-17m0rzj {
+  border: none !important;
+}
