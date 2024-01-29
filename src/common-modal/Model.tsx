@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Button, Modal } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
-import CommonInputField from "../common-inputFiles/InputFields";
+import CommonInputField from "../components/elements/common-inputFiles/InputFields";
 
 import { grey } from "@mui/material/colors";
 

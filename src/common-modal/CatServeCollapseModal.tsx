@@ -10,12 +10,11 @@ import {
   Typography,
   Divider,
 } from "@mui/material";
-import ROUTES from "../routes/Rout";
-import { showToast } from "../toaster/Toaster";
+import ROUTES from "../api/endpoints/endPoint";
+import { showToast } from "../components/toaster/Toaster";
 
 interface FormValues {
   name: string;
-  email: string;
 }
 
 interface FormProps {
@@ -35,7 +34,7 @@ const CatServCollapseModal: React.FC<FormProps> = ({
 }) => {
   const formik = useFormik({
     initialValues: {
-      name: providerValue ? providerValue.name : "",
+      name: providerValue.service_category,
     } as FormValues,
     validationSchema: Yup.object({
       name: Yup.string().required("Name is required"),
@@ -107,7 +106,7 @@ const CatServCollapseModal: React.FC<FormProps> = ({
               {...formik.getFieldProps("name")}
               error={formik.touched.name && Boolean(formik.errors.name)}
               helperText={formik.touched.name && formik.errors.name}
-              defaultValue={providerValue.service_category}
+              defaultValue={formik.values.name}
             />
 
             <Stack

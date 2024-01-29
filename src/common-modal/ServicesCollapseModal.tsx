@@ -1,5 +1,5 @@
 import React from "react";
-import { showToast } from "../toaster/Toaster";
+import { showToast } from "../components/toaster/Toaster";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import {
@@ -12,13 +12,12 @@ import {
   Typography,
   Divider,
 } from "@mui/material";
-import ROUTES from "../routes/Rout";
+import ROUTES from "../api/endpoints/endPoint";
 import { useParams } from "react-router-dom";
 
 interface FormValues {
   serviceType: unknown;
   name: string;
-  email: string;
 }
 
 interface FormProps {
@@ -40,8 +39,6 @@ const ServiceCollapseModal: React.FC<FormProps> = ({
 }) => {
   const { id } = useParams();
 
-  console.log(id, "gfzdvdhg");
-  console.log(modalText, "Categories");
   const formik = useFormik({
     initialValues: {
       name: providerValue ? providerValue.name : "",
@@ -49,6 +46,7 @@ const ServiceCollapseModal: React.FC<FormProps> = ({
     } as FormValues,
     validationSchema: Yup.object({
       name: Yup.string().required("Name is required"),
+      serviceType: Yup.string().required(" Service type is required"),
     }),
     onSubmit: async (values) => {
       const category: any = categories.find(

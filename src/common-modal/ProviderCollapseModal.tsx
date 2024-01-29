@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import { showToast } from "../toaster/Toaster";
+import { showToast } from "../components/toaster/Toaster";
 
 import {
   Button,
@@ -12,7 +12,7 @@ import {
   Typography,
   Divider,
 } from "@mui/material";
-import ROUTES from "../routes/Rout";
+import ROUTES from "../api/endpoints/endPoint";
 
 interface FormValues {
   name: string;

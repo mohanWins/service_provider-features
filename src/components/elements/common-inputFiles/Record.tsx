@@ -2,8 +2,8 @@ import React from "react";
 import { Formik, Field, Form } from "formik";
 import * as Yup from "yup";
 import { TextField, Button, Stack } from "@mui/material";
-import ROUTES from "../routes/Rout";
-import { showToast } from "../toaster/Toaster";
+import ROUTES from "../../../api/endpoints/endPoint";
+import { showToast } from "../../toaster/Toaster";
 
 interface RecordInputFieldProps {
   handleCloseModal: () => void;

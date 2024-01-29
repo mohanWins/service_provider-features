@@ -29,7 +29,6 @@ const RecordInputField: React.FC<RecordInputFieldProps> = ({
   const validationSchema = Yup.object({
     notes: Yup.string().required("Notes is required"),
   });
-  console.log(modalText, " statusjjjjj");
 
   return (
     <Formik
@@ -38,7 +37,7 @@ const RecordInputField: React.FC<RecordInputFieldProps> = ({
       onSubmit={async (values, { setSubmitting }) => {
         onFormSubmit(values);
         setSubmitting(false);
-        console.log(values, "valuess");
+
         onUpdateProvider(values);
       }}
     >

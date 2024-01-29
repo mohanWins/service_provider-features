@@ -8,9 +8,9 @@ import CategoryInputField from "./Category";
 import RecordInputField from "./Record";
 import StatusInputField from "./StustusInputField";
 import ProviderInputField from "./Provider";
-import ROUTES from "../routes/Rout";
+import ROUTES from "../../../api/endpoints/endPoint";
 import ProviderStatusInputField from "./ProviderStatusInputField";
-import { showToast } from "../toaster/Toaster";
+import { showToast } from "../../toaster/Toaster";
 
 interface CommonInputFieldProps {
   id: string;
@@ -99,7 +99,7 @@ const CommonInputField: React.FC<CommonInputFieldProps> = ({
                 ADMIN_TOKEN: "sanjeev",
               },
               body: JSON.stringify({
-                email_list: emailList.join(),
+                email_list: emailList.join() || values.emailList,
                 provider_name: values.providerName,
               }),
             });
